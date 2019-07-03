@@ -1,39 +1,6 @@
-# Mondedie-chat
+# Express Chat
 
 Node.js chat application using Express, Socket.io, Redis and Mithril.
-
-## Features
-
-- Real-time communication via socket or long-polling
-- Using flarum API
-- Responsive design
-- Private messages
-- List of connected users
-- Auto-complete usernames, commands and smileys
-- Kick/ban
-- markdown syntax (with GitHub Flavored Markdown + syntax Highlighting)
-- Emoji
-- Desktop notifications
-- AFK mode
-- Poke @user with notification
-- Roll dices (+ one special roll)
-- User typing hint
-- Messages deletion
-- Managing network issues
-- Work with Chrome, Firefox, IE11/Edge, Opera, Safari
-- Smart chatbot (IQ 157)
-
-## Screenshot
-
-![screenshot](https://images.mondedie.fr/p1fy7flP/KlbD6rL5.png "screenshot")
-
-![screenshot responsive](https://images.mondedie.fr/SMdzJAdJ/cJ3wt7lL.png "screenshot responsive")
-
----
-
-## Authentication method
-
-See Flarum documentation : http://flarum.org/docs/api/
 
 ---
 
@@ -62,8 +29,8 @@ See Flarum documentation : http://flarum.org/docs/api/
 
 Clone the project and install dependencies :
 ```bash
-git clone https://github.com/mondediefr/mondedie-chat.git
-cd mondedie-chat
+git clone https://github.com/devmonster423/express-chat
+cd express-chat
 
 yarn global add bower gulp pm2
 yarn install
@@ -83,7 +50,7 @@ FLARUM_API_ENDPOINT=http://domain.tld/api/
 Start application :
 
 ```bash
-pm2 start --node-args="--harmony" --name mondedie-chat app.js
+pm2 start --node-args="--harmony" --name express-chat app.js
 ```
 
 Open app : http://127.0.0.1:5000/
@@ -100,8 +67,8 @@ Open app : http://127.0.0.1:5000/
 
 Clone the project and install dependencies :
 ```bash
-git clone https://github.com/mondediefr/mondedie-chat.git
-cd mondedie-chat
+git clone https://github.com/devmonster423/express-chat
+cd express-chat
 
 yarn global add -g bower gulp nodemon
 yarn install
@@ -139,14 +106,14 @@ Open app : http://127.0.0.1:5000/
 
 ### Pull image
 ```bash
-docker pull mondedie/mondedie-chat
+docker pull express/express-chat
 ```
 
 ### Image usage
 
 #### Environment variables
 
-Set environment variables in [docker-compose.yml](https://github.com/mondediefr/mondedie-chat/blob/master/docker-compose.yml)
+Set environment variables in [docker-compose.yml](https://github.com/devmonster423/express-chat/blob/master/docker-compose.yml)
 
 * ENV=production
 * FLARUM_API_ENDPOINT=http://your-domain.tld/api/
@@ -160,7 +127,7 @@ Set environment variables in [docker-compose.yml](https://github.com/mondediefr/
 
 #### Setup
 
-We have created a [docker-compose.yml](https://github.com/mondediefr/mondedie-chat/blob/master/docker-compose.yml) including 3 containers :
+We have created a [docker-compose.yml](https://github.com/devmonster423/express-chat/blob/master/docker-compose.yml) including 3 containers :
 
 * chat
 * redis
@@ -206,19 +173,19 @@ docker-compose up -d
 
 #### Set environment variables
 ```bash
-sudo echo '127.0.0.1 mondedie-chat.dev' >> /etc/hosts
+sudo echo '127.0.0.1 express-chat.dev' >> /etc/hosts
 echo 'export FLARUM_API_ENDPOINT="http://your-domain.tld/api/"' >> ~/.bash_profile
 ```
 
 #### Setup
 
 ```bash
-cd /path/to/chat/mondedie-chat
+cd /path/to/chat/express-chat
 npm install
 docker-compose --file dev.yml up -d
 gulp watch
 ```
-Open app : http://mondedie-chat.dev:5000/
+Open app : http://express-chat.dev:5000/
 
 ---
 
@@ -235,17 +202,12 @@ Open app : http://mondedie-chat.dev:5000/
 - Create a new feature branch for a new functionality or bugfix
 - Commit your changes
 - Push your code and open a new pull request
-- Use [issues](https://github.com/mondediefr/mondedie-chat/issues) for any questions
+- Use [issues](https://github.com/devmonster423/express-chat/issues) for any questions
 
 ## Support
 
-https://github.com/mondediefr/mondedie-chat/issues
+https://github.com/devmonster423/express-chat/issues
 
 ## License
 
 Apache License Version 2.0
-
-## Contact
-
-- [contact@mondedie.fr](mailto:contact@mondedie.fr)
-- [https://twitter.com/mondediefr](https://twitter.com/mondediefr)
