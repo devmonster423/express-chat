@@ -16,7 +16,7 @@
     "express": "4.14.*",
     "express-session": "1.14.*",
     "express-validator": "3.0.*",
-    "highlight.js": "9.*",
+    "highlight.js": "10.*",
     "marked": "0.3.*",
     "mithril": "0.2.X",
     "morgan": "1.7.*",
